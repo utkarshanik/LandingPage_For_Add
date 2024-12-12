@@ -1,0 +1,211 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    --p-col1:hsl(257, 40%, 49%);
+    --p-col2:hsl(300, 69%, 71%);
+    --p-font1:Poppins;
+    --p-font2:Open Sans;
+}
+
+body
+{
+   height: 100vh;
+   width: 100vw;
+   background-color: var(--p-col1);
+   background-image: url(images/bg-desktop.svg);
+}
+
+.card
+{
+    height:90vh;
+    width: 90vw;
+    position: relative;
+    top: 10%;
+    /* border: 1px solid black; */
+    margin:auto auto;
+    display: flex; 
+    flex-direction: row;
+}
+
+.image
+{
+    height: inherit;
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 6%;
+    overflow:hidden;
+}
+
+.image .img1
+{
+    padding-top:1%;
+}
+
+.image .img2
+{
+    width:90%;
+    padding-top: 1%;
+    height: 70%;
+    
+}
+
+.info
+{
+    width: 30%;
+}
+
+.info p
+{
+    line-height: 1.4em;
+
+}
+
+.details
+{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25%;
+    align-items:left;
+    margin: auto auto;
+    color: rgb(220, 218, 218);
+    gap: 2em;
+    font-family:var(--p-font2);
+    font-size:14px;
+}
+
+.details h1{
+    font-family: var(--p-font1);
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.details button
+{
+    width: 10vw;
+    height: 6vh;
+    background-color: white;
+    border-radius: 5em;
+    color: rgb(97, 95, 95);
+    border: 2px solid black;
+    margin-top: 5%;
+}
+
+button:hover
+{
+    background-color: var(--p-col2);
+    color: white;
+}
+
+.icon
+{
+    display: flex;
+    justify-content: right;
+}
+
+.icon1 
+{
+    width: 2em;
+    height: 2em;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0px 0.3rem;
+    margin-top: 10%;
+}
+
+.icon i
+{
+    width: 1em;
+    height: 1em;
+    text-align: center;
+}
+
+.icon1:hover 
+{
+    color: orchid;
+    border: 1px solid orchid;
+}
+
+
+footer
+{
+    width: 100%;
+    /* height: 2%; */
+    position:sticky;
+    top:100%;
+}
+
+
+/* Mobile styles (375px and below) */
+@media (max-width: 375px) {
+    body {
+        background-image: url(images/bg-mobile.svg);
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        gap: 4%;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .details {
+        width: 90%;
+        font-size: 12px;
+        top: 10%;
+    }
+
+    .details button {
+        width: 80%;
+        height: 5vh;
+    }
+    .icon
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Desktop styles (1440px and above) */
+@media (min-width: 1440px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+    .image {
+        width: 60%;
+    }
+
+    .details h1 {
+        font-size: 2.5em;
+    }
+
+    .details button {
+        width: 15vw;
+        height: 7vh;
+    }
+}
