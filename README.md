@@ -26,8 +26,8 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
-(design/Screenshot (8).png)
-(design/Screenshot (9).png)
+![Alt text](design/Screenshot (8).png)
+![Alt text](design/Screenshot (9).png)
 
 
 ### Links
