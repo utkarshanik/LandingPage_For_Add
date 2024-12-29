@@ -26,7 +26,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.jpg)
-![Alt text](design/Screenshot (8).png)
+![Alt text](https://github.com/utkarshanik/LandingPage_For_Add/blob/main/design/Screenshot%20(11).png)
 ![Alt text](design/Screenshot (9).png)
 
 
